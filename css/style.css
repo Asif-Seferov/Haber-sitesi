@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+}
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+/* header part start */
+
+header{
+ position: fixed;
+   z-index: 9999;
+    width: 100%;
+    background-color: #fff;
+}
+header > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .logo{
+    width: 200px;
+}
+.container .logo img{
+    width: 100%;
+}
+.container .social-icons a{
+    font-size: 32px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #57575C;
+    transition: 0.3s;
+}
+.container .social-icons a:hover{
+    color: #7B7B7F;
+}
+.container .header-btns a{
+    padding: 6px 10px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+.container .header-btns a:first-child{
+    background-color: red;
+    margin-right: 5px;
+    color: #fff !important;
+}
+.container .header-btns a:first-child:hover{
+    background-color: #68686E;
+    color: red !important;
+}
+.container .header-btns a:last-child:hover{
+    background-color: #68686E;
+    color: red;
+}
+/* header part end */
+
+/* section-header part start */
+.header-section{
+    background: url('../images/featured.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    position: relative;
+  
+}
+.header-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.header-section .info{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 80px;
+    color: #000;
+    position: relative;
+    z-index: 999;
+    color: #333;
+}
+.header-section .info h5{
+    background-color: orangered;
+    width: 140px;
+    text-align: center;
+    padding: 6px 8px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+.header-section .info p{
+    width: 50%;
+    font-size: 15px;
+}
+.header-section .info h3{
+    font-size: 26px;
+    margin-bottom: 3px;
+}
+.header-section .info a{
+    display: block;
+    width: 140px;
+    text-align: center;
+    padding: 6px 8px;
+    background-color: red;
+    color: #fff;
+    opacity: 0.8;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.header-section .info a:hover{
+   text-decoration: underline;
+}
+/* section-header part end */
+
+/* section-content part start */
+.section-content{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.section-content .content-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-content .content-1 .first-blog{
+    width: 65%;
+    display: flex;
+   
+}
+.section-content .content-1 .first-blog .first-image
+{
+    width: 40%;
+    height: 250px;
+}
+.section-content .content-1 .first-blog .first-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-content .content-1 .first-blog .sport-div{
+    width: 60%;
+    height: 250px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.section-content .content-1 .first-blog .sport-div p:first-child{
+    background-color: #6DDE3F;
+    width: 100px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.section-content .content-1 .first-blog .sport-div h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.section-content .content-1 .first-blog .sport-div p:last-child{
+    font-size: 17px;
+}
+.section-content .content-1 .second-blog{
+    width: 35%;
+    height: 300px;
+    background-color: #333;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.section-content .content-1 .second-blog p:first-child{
+    background-color: #E746CC;
+    width: 100px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.section-content .content-1 .second-blog h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.section-content .content-1 .second-blog p:last-child{
+    font-size: 17px;
+}
+.section-content .content-2{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.content-2 .blog{
+    width: calc(33% - 10px);
+    margin: 10px;
+}
+.content-2 .sport-div p:first-child{
+    width: 100%;
+    background-color: #E77923;
+    width: 100px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.content-2 .blog img{
+    width: 100%;
+}
+.section-content .content-3{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.content-3 .blog{
+    width: calc(33% - 10px);
+    margin: 10px;
+}
+.content-3 img{
+    width: 100%;
+}
+.content-3 .sport-div p:first-child{
+    width: 100%;
+    background-color: #2246D7;
+    width: 100px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.content-3 .sport-div h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.content-3 .sport-div p:last-child{
+    font-size: 17px;
+}
+.content-3 .sport-div-2 p:first-child{
+    width: 100%;
+    background-color: #E746CC;
+    width: 100px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.content-3 .sport-div-2 h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.content-3 .sport-div-2 p:last-child{
+    font-size: 17px;
+}
+.section-content .content-4{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+}
+.section-content .content-4 .first-blog{
+    width: 65%;
+    display: flex;
+    margin-left: 20px;
+   
+}
+.section-content .content-4 .first-blog .first-image
+{
+    width: 40%;
+    height: 250px;
+}
+.section-content .content-4 .first-blog .first-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-content .content-4 .first-blog .sport-div{
+    width: 60%;
+    height: 250px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.section-content .content-4 .first-blog .sport-div p:first-child{
+    background-color: #6DDE3F;
+    width: 100px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.section-content .content-4 .first-blog .sport-div h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.section-content .content-4 .first-blog .sport-div p:last-child{
+    font-size: 17px;
+}
+.section-content .content-4 .second-blog{
+    width: 35%;
+    height: 300px;
+    background-color: #E77923;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.section-content .content-4 .second-blog p:first-child{
+    background-color: #E746CC;
+    width: 100px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.section-content .content-4 .second-blog h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.section-content .content-4 .second-blog p:last-child{
+    font-size: 17px;
+}
+/* section-content part end */
+
+/* footer part start */
+
+footer{
+    width: 100%;
+    background-color: #393B3A;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+footer  .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+
+}
+footer .first-div img{
+    margin-bottom: 15px;
+}
+footer .second-div h2{
+    font-size: 30px;
+}
+footer .second-div form input,button{
+    width: 100%;
+    padding: 10px 3px;
+}
+::placeholder{
+    font-size: 17px;
+}
+footer .second-div form button{
+    margin-top: 10px;
+    background-color: red;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+footer .third-div h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+footer .third-div ul{
+    list-style: none;
+}
+footer .third-div ul li{
+    padding: 10px 0;
+    border-bottom: 1px dotted #fff;
+}
+footer .third-div ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+footer .five-blog{
+   height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .four-div h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+footer .four-div p{
+    font-size: 15px;
+}
+footer .four-div a{
+    display: inline-block;
+    margin-top: 8px;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #111;
+}
+
+footer .first-div img{
+    width: 200px;
+}
+
+/* footer part end */
+
+
+
+
+
+
+
+
+/* media queries start */
+@media only screen and (max-width: 992px) {
+    .section-content .content-1{
+        flex-direction: column;
+    }
+    .section-content .content-1 .first-blog{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-content .content-1 .first-blog .first-image{
+        width: 80%;
+    }
+    .section-content .content-1 .first-blog .sport-div{
+        width: 80%;
+    }
+    .section-content .content-1 .second-blog{
+        width: 80%;
+    }
+    .section-content .content-2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-2 .blog{
+        width: 80%;
+    }
+    .section-content .content-3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-3 .blog{
+        width: 80%;
+    }
+    .section-content .content-4{
+        flex-direction: column-reverse;
+    }
+    .section-content .content-4 .first-blog{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .section-content .content-4 .first-blog .first-image{
+        width: 80%;
+    }
+    .section-content .content-4 .first-blog .sport-div{
+        width: 80%;
+    }
+    .section-content .content-4 .second-blog{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .container{
+        
+    }
+
+}
+
+@media only screen and (max-width: 760px){
+    header > .container{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container .social-icons{
+        display: none;
+    }
+    .container .header-btns{
+        margin-top: 10px;
+    }
+    .header-section .info{
+        margin-top: 120px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .header-section .info p{
+        width: 80%;
+    }
+}
